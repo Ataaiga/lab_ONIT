@@ -1,0 +1,10 @@
+C:\MyUni\ONIT\lab1_ONIT\backend\target\debug\deps\sea_query_binder-e9ce617a355c3a79.d: C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sea-query-binder-0.7.0\src\lib.rs C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sea-query-binder-0.7.0\src\sqlx_postgres.rs C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sea-query-binder-0.7.0\src\values.rs C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sea-query-binder-0.7.0\src\sqlx.rs
+
+C:\MyUni\ONIT\lab1_ONIT\backend\target\debug\deps\libsea_query_binder-e9ce617a355c3a79.rlib: C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sea-query-binder-0.7.0\src\lib.rs C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sea-query-binder-0.7.0\src\sqlx_postgres.rs C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sea-query-binder-0.7.0\src\values.rs C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sea-query-binder-0.7.0\src\sqlx.rs
+
+C:\MyUni\ONIT\lab1_ONIT\backend\target\debug\deps\libsea_query_binder-e9ce617a355c3a79.rmeta: C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sea-query-binder-0.7.0\src\lib.rs C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sea-query-binder-0.7.0\src\sqlx_postgres.rs C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sea-query-binder-0.7.0\src\values.rs C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sea-query-binder-0.7.0\src\sqlx.rs
+
+C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sea-query-binder-0.7.0\src\lib.rs:
+C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sea-query-binder-0.7.0\src\sqlx_postgres.rs:
+C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sea-query-binder-0.7.0\src\values.rs:
+C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sea-query-binder-0.7.0\src\sqlx.rs:

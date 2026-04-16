@@ -1,0 +1,46 @@
+services:
+  backend:
+    build:
+      context: . # Контекст сборки - текущая директория (my_app)
+      dockerfile: Dockerfile.backend # Указываем Dockerfile для бэкенда
+    container_name: rust_backend
+    ports:
+      - "3000:3000" # Проброс порта бэкенда для локального доступа (если нужен)
+    env_file:
+      - backend/.env # Подтягиваем переменные окружения из .env файла
+    depends_on:
+      db:
+        condition: service_healthy # Запускать бэкенд только когда БД будет здорова
+    healthcheck: # Проверка здоровья для бэкенда
+      test: ["CMD-SHELL", "curl -f http://localhost:3000/health || exit 1"] # Проверяем эндпоинт /health
+      interval: 10s # Проверять каждые 10 секунд
+      timeout: 5s   # Таймаут проверки 5 секунд
+      retries: 3    # 3 попытки перед объявлением нездоровым
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: react_frontend
+    ports:
+      - "80:80" # Фронтенд будет доступен на 80 порту хоста
+    depends_on:
+      backend:
+        condition: service_healthy # Запускать фронтенд только когда бэкенд будет здоров (опционально, но хорошо для порядка)
+
+  db:
+    image: postgres:13 # Используем официальный образ PostgreSQL версии 13
+    container_name: postgres_db
+    env_file:
+      - ./.env # Подтягиваем переменные окружения для БД
+    volumes:
+      - pgdata:/var/lib/postgresql/data # Сохраняем данные БД в именованный том
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql # Запускаем скрипт инициализации БД
+    healthcheck: # Проверка здоровья для БД
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"] # Проверяем готовность PostgreSQL
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pgdata: # Определение именованного тома для БД

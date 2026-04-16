@@ -1,0 +1,11 @@
+C:\MyUni\ONIT\lab1_ONIT\backend\target\debug\deps\aliasable-7896e0921a22b947.d: C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aliasable-0.1.3\src\lib.rs C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aliasable-0.1.3\src\mut_ref.rs C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aliasable-0.1.3\src\boxed.rs C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aliasable-0.1.3\src\string.rs C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aliasable-0.1.3\src\vec.rs
+
+C:\MyUni\ONIT\lab1_ONIT\backend\target\debug\deps\libaliasable-7896e0921a22b947.rlib: C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aliasable-0.1.3\src\lib.rs C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aliasable-0.1.3\src\mut_ref.rs C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aliasable-0.1.3\src\boxed.rs C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aliasable-0.1.3\src\string.rs C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aliasable-0.1.3\src\vec.rs
+
+C:\MyUni\ONIT\lab1_ONIT\backend\target\debug\deps\libaliasable-7896e0921a22b947.rmeta: C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aliasable-0.1.3\src\lib.rs C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aliasable-0.1.3\src\mut_ref.rs C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aliasable-0.1.3\src\boxed.rs C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aliasable-0.1.3\src\string.rs C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aliasable-0.1.3\src\vec.rs
+
+C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aliasable-0.1.3\src\lib.rs:
+C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aliasable-0.1.3\src\mut_ref.rs:
+C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aliasable-0.1.3\src\boxed.rs:
+C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aliasable-0.1.3\src\string.rs:
+C:\Users\Ataaiga\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aliasable-0.1.3\src\vec.rs:

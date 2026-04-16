@@ -1,0 +1,48 @@
+# Этап компиляции (builder stage)
+FROM rust:latest AS builder
+
+# Устанавливаем системные зависимости для PostgreSQL (libpq-dev)
+# и другие инструменты, необходимые для компиляции (pkg-config, build-essential).
+# musl-tools не нужны, если не используем `x86_64-unknown-linux-musl`
+RUN apt-get update && apt-get install -y \
+    libpq-dev \
+    pkg-config \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /lab1_ONIT
+
+# Копируем Cargo.toml и Cargo.lock
+# Этот шаг будет кэширован. Если эти файлы не меняются,
+# Docker не будет заново выполнять `cargo build` в следующем шаге.
+COPY backend/Cargo.toml backend/Cargo.lock ./
+
+# Копируем весь исходный код
+COPY backend/src ./src
+
+# Компилируем приложение
+# Теперь у Cargo есть все необходимые файлы для успешной сборки.
+# --release для оптимизированной сборки
+# --locked для использования Cargo.lock
+# --target x86_64-unknown-linux-gnu - для конкретной цели (если не нужно, можно убрать)
+# --release --locked
+RUN cargo build
+
+# Финальный образ (release stage)
+FROM debian:bookworm-slim
+
+# Устанавливаем libpq5 для работы с PostgreSQL и curl для healthcheck
+RUN apt-get update && apt-get install -y \
+    libpq5 \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Копируем скомпилированный бинарник из этапа 'builder'
+COPY --from=builder /lab1_ONIT/target/debug/backend ./backend
+
+EXPOSE 3000
+
+# Команда для запуска приложения
+CMD ["./backend"]
